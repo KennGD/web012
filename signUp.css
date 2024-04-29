@@ -1,0 +1,49 @@
+
+<style> 
+{}
+body {
+  text-align:center;
+}
+
+.logoHead {
+  height :60px;
+  width :150px;
+  }
+
+.Ruler {
+  width :300px;
+  }
+
+.FirstName {
+  height: 40px;
+  width: 250px;
+  }
+
+.LastName {
+  height: 40px;
+  width: 250px;
+  }
+
+.Email {
+  height: 40px;
+  width: 250px;
+  }
+
+.Password {
+  height: 40px;
+  width: 250px;
+  }
+
+.SignUp {
+  height: 40px;
+  width: 250px;
+  color: white;
+  background: darkblue;
+  }
+
+.SignIn {
+  text-decoration: none;
+  }
+
+</style>
+

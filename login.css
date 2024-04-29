@@ -1,0 +1,63 @@
+body {
+  text-align:center;
+}
+
+.logoHead {
+  height :60px;
+  width :150px;
+  }
+
+.hr1 {
+  width: 300px;
+  }
+.h2a {
+  color:darkblue;
+  }
+
+.email1 {
+  height: 40px;
+  width: 250px;
+  }
+
+.button1 {
+  height: 40px;
+  width: 250px;
+  color: white;
+  background: darkblue;
+  }
+  
+.h41 {
+  color:black;
+  margin-left: -165px;
+  margin-bottom: 5px;
+  }
+
+.forgot1 {
+  color:blue;
+  text-decoration: none;
+  }
+
+.hr2 {
+  width:300px;
+  }
+
+.h42 {
+  color:black;
+  margin-left: -190px;
+  margin-bottom: 5px;
+  }
+
+.h43 {
+  display: inline-block;
+  }
+
+.newuser1 {
+  display: inline-block;
+  text-decoration: none;
+  color: blue;
+  }
+
+.pass1 {
+  height: 40;
+  width: 250;
+  }
