@@ -19,10 +19,10 @@ function checkGuess() {
             }, 3000);
         } else if (userGuess < randomNumber) {
             resultElement.innerHTML = "Too Low";
-                setTimeout(function(){result.Element.innerHTML = "";}, 2000);
+                setTimeout(function(){resultElement.innerHTML = "";}, 2000);
         } else {
             resultElement.innerHTML = "Too High";
-                setTimeout(function(){result.Element.innerHTML = "";}, 2000);
+                setTimeout(function(){resultElement.innerHTML = "";}, 2000);
         }
         attempts++;
     } else {
