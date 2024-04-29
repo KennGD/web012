@@ -11,7 +11,7 @@ function checkGuess() {
     const userGuess = parseInt(document.getElementById("guess").value);
     const resultElement = document.getElementById("result");
     
-    if (attempts <= 7) {
+    if (attempts <= 5) {
         if (userGuess === randomNumber) {
             resultElement.innerHTML = 'Your Document Has Been Submitted';
             setTimeout(function() {
@@ -19,8 +19,10 @@ function checkGuess() {
             }, 3000);
         } else if (userGuess < randomNumber) {
             resultElement.innerHTML = "Too Low";
+                setTimeout(function(){result.Element.innerHTML = "";}, 2000);
         } else {
             resultElement.innerHTML = "Too High";
+                setTimeout(function(){result.Element.innerHTML = "";}, 2000);
         }
         attempts++;
     } else {
