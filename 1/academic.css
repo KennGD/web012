@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: gray;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: black;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+
+nav.open {
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+nav ul li {
+  display: block; 
+  margin-bottom: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  nav {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: gray;
+    overflow: hidden;
+    transition: height 0.3s;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    overflow: visible;
+    transition: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+.courses {
+  padding: 50px;
+}
+
+.courses h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.course {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.course h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+

@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admissions.css">
+  <script src="admissions.js"></script>  
+  <title>Admissions</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="School Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academic.html">Academic</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../index.html">Logout</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="admissions">
+      <h1>Admissions</h1>
+      <p>Welcome to our admissions section. Please fill out the form below to apply for admission to our school.</p>
+      <form action="#" method="post" onsubmit="return validateForm()">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="message">Message (Optional):</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Piat Gumaca. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
