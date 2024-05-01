@@ -168,6 +168,11 @@ main {
   background-color: gray;
 }
 
+.feature img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
 .features {
   display: flex;
   justify-content: space-between;

@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
+<script src="index.js"></script>
 <title>School Home Page</title>
 </head>
 <body>
@@ -31,26 +31,28 @@
   <main>
     <section class="hero">
       <h1>Welcome to PIAT Online</h1>
-      <p>Empowering students to achieve their full potential</p>      <a href="login.html" class="btn">Login</a>
+      <p>Empowering students to achieve their full potential</p>      
+      <a href="signUp.html" class="btn">Sign Up</a>
     </section>
     
     <section class="features">
       <div class="feature">
+        <img src="icon1.jpg">
         <h2>High-Quality Education</h2>
         <p>We offer high-quality education to help students excel academically.</p>
       </div>
       <div class="feature">
+        <img src="icon2.jpg">
         <h2>Experienced Faculty</h2>
         <p>Our experienced faculty members are dedicated to student success.</p>
       </div>
       <div class="feature">
+        <img src="icon3.jpg">
         <h2>Modern Facilities</h2>
         <p>We provide modern facilities to create an optimal learning environment.</p>
       </div>
     </section>
-  </main>
- 
-  <main>
+  
     <section class="about-content">
       <h1>About Our School</h1>
       <p>Philtech Institute of Arts and Technology Inc. (PIAT) is an educational institution to provide quality service in the instructions, skills training, research and other extension services. The institution focuses on direct applied skills to ensure that the students will learn to be skilled, equipped and globally competitive in their chosen trade. PIAT started in 2013 with only one branch located in gumaca and brached out through out the years “Catanauan, Lucena, Tagkawayan” and is now offering senior high school education and other various courses in 3 year diploma.</p>   
@@ -64,14 +66,12 @@
         <p>PIAT to be one of the leading institutes in the academe that provides equipped, skilled, qualified graduates who are globally competitive and shall serve as pillars in this changing world.</p>
       </div>
     </section>
-  </main>
   
-    <main>
     <section class="contact">
       <h1>Contact Us</h1>
       <p>Feel free to get in touch with us.  
     <div class="contact">
-  <form>
+  <form onsubmit="return messageForm()">
     <label for="name">Your Name:</label>
     <input type="text" id="name" name="name" required>
     
