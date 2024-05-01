@@ -4,13 +4,20 @@ body {
   padding: 0;
 }
 
+/*style ng header at navigation*/
+
 header {
-  background-color: gray;
+  background: linear-gradient(to bottom, gray, white);
   color: white;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  
+  
 }
 
 .logo img {
@@ -38,17 +45,22 @@ nav ul {
   padding: 0;
   text-align: center;
   padding-top: 20px;
+  margin-right: 40px;
 }
 
 nav ul li {
   display: block; 
   margin-bottom: 20px;
+  
 }
 
 nav ul li a {
-  color: white;
+  background-image: linear-gradient(to bottom, black, navy);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 30px;
   margin-right: 20px;
 }
 
@@ -60,7 +72,7 @@ nav ul li a {
   .menu-btn {
     position: absolute;
     top: 30px;
-    right: 40px;
+    right: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,7 +95,7 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 0;
-    background-color: gray;
+    background: linear-gradient(to bottom, white, gray);
     overflow: hidden;
     transition: height 0.3s;
   }
@@ -112,18 +124,31 @@ nav ul li a {
   }
 }
 
+footer {
+  background: linear-gradient(to top, gray, white);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/*stylw ng home*/
+
 main {
   padding: 20px;
 }
 
 .hero {
-  background-color: lightgray;
+  background-image: linear-gradient(to top, white, rgba(128,128,128,0.5)),
+  url('bg.jpg');
+  background-size: cover;
   padding: 100px 20px;
   text-align: center;
 }
 
 .hero h1 {
   font-size: 36px;
+  color: white;
 }
 
 .hero p {
@@ -133,7 +158,7 @@ main {
 
 .btn {
   padding: 10px 20px;
-  background-color: black;
+  background-color: gray;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -156,9 +181,85 @@ main {
 }
 
 
-footer {
+/*style ng about us*/
+
+.about-content {
+  padding: 10px;
+  text-align: left;
+}
+
+.about-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-content .mission,
+.about-content .vission {
+  background-color: #f0f0f0;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.about-content .mission h2,
+.about-content .history h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-content .mission p,
+.about-content .history p {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+/*style sa contact*/
+
+.contact {
+  padding: 10px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  margin-top: 20px;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.contact form input[type="submit"] {
+  padding: 10px 20px;
   background-color: gray;
   color: white;
-  text-align: center;
-  padding: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
 }
+

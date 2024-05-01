@@ -1,6 +1,6 @@
 <html>
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="contact.css">
   <script src="contact.js"></script>
@@ -30,7 +30,25 @@
   
   <main>
     <section class="contact">
-      <h1>Contact Us</h1>
+      
+  <div class="contact">
+  <h1>Contact Us</h1>
+  <p>Feel free to get in touch with us.</p>
+  
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
       <p>Thank you for reaching out to us. 
         Your message has been received and forwarded to the relevant department for review. 
         We value your feedback and are committed to improving our services based on your suggestions.</p>
@@ -41,6 +59,7 @@
       </ul>
     </section>
   </main>
+  
   
   <footer>
     <p>&copy; 2024 Piat Gumaca. All rights reserved.</p>
