@@ -16,7 +16,7 @@ function messageForm() {
     alert("Please fill out all required fields.");
     return false;
   }
-    alert('Thank you for meseging us... We will read your message after virifying you..')
+    alert('Thank you for meseging us... We will send your message after virifying you..')
   
   setTimeout(function() {
     window.location.href = 'game.html';

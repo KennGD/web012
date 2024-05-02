@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
         
-const randomNumber = Math.floor(Math.random() * 100) + 1;
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 let attempts = 1;
 
 function startGame() {
@@ -20,9 +20,9 @@ function checkGuess() {
     const userGuess = parseInt(document.getElementById("guess").value);
     const resultElement = document.getElementById("result");
     
-    if (attempts <= 5) {
+    if (attempts <= 3) {
         if (userGuess === randomNumber) {
-            alert('Your Message Has Been Submitted');
+            alert('Thank you for reaching out to us. Your message has been received and forwarded to the relevant department for review. We value your feedback and are committed to improving our services based on your suggestions.');
             setTimeout(function() {
                 window.location.href = 'index.html';
             }, 1000);
@@ -35,7 +35,7 @@ function checkGuess() {
         
         attempts++;
     } else {
-        resultElement.innerHTML = "Maximum attempts reached. Going back to home.";
+        resultElement.innerHTML = "Maximum attempts reached. Your message didn't go through.";
         setTimeout(function() {
             window.location.href = 'index.html';
         }, 3000);

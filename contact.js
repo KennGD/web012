@@ -7,7 +7,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
+function messageForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  
+  if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+    alert("Please fill out all required fields.");
+    return false;
+  }
+    alert('Thank you for meseging us... We will read your message after virifying you..')
+  
+  setTimeout(function() {
+    window.location.href = 'game.html';
+  }, 1000);
+  
+  return false;
+}
 
 
 
